@@ -1,0 +1,20 @@
+.timeline_event:hover .timeline_event_icon {
+    @apply rotate-45;
+    background: #ff69b4;
+  }
+  .timeline_event:hover .timeline_event_thumbnail {
+    @apply shadow-[inset_40em_0_0_0_#FF69B4];
+  }
+  .timeline_event_icon {
+    transform: rotate 45deg;
+    background: linear-gradient(45deg, #00ccff, #d400d4);
+  }
+  .timeline_event_thumbnail {
+    @apply shadow-[inset_0_0_0_0em_#ef795a];
+    background: linear-gradient(45deg, #00ccff, #d400d4);
+  }
+  @media (max-width: 550px) {
+    .timeline {
+      @apply pl-20 before:left-28;
+    }
+  }
