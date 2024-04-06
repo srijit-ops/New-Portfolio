@@ -1,61 +1,55 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import Head from 'next/head'
+import { defaultData } from "@/utils/data";
+import Hero from "@/components/herosection/Hero";
+import About from "@/components/aboutsection/About";
+import Skills from "@/components/skillsection/Skills";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home({data}) {
+  console.log(data,"data chek")
   return (
     <>
       <Head>
-        <title>{data.user.about.name}</title>
-        <meta property="og:title" content={data.user.about.name} />
-        <meta property="og:image" content={data.user.about.avatar.url} />
-        <meta property="og:description" content={data.user.about.subTitle} />
-        <meta name="description" content={data.user.about.subTitle}></meta>
+        <title>Srijita Sengupta portfolio</title>
+        <meta property="og:title" content="Srijita Sengupta" />
+        <meta property="og:image" content="/srijita logo.png" />
+        <meta property="og:description" content="Just an out of the box developer who knows the subtle art of not giving a bug." />
+        <meta name="description" content="Just an out of the box developer who knows the subtle art of not giving a bug. I love to create impact with tech."></meta>
         <link
           rel="shortcut icon"
-          href={data.user.about.avatar.url}
+          href="/srijita logo.png"
           type="image/x-icon"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&family=Caveat&display=swap"
-          rel="stylesheet"
-        />
-        <link
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
-        />
+        /> */}
         {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
       </Head>
       <main className={`pb-8  bg-white dark:bg-black relative`}>
-        <Header name={data.user.about.name} />
-        <HeroSection heroData={data.user.about} />
-        <AboutSection aboutData={data.user.about} />
-        <ServiceSection serviceData={data.user.services} />
-        <SkillSection skillData={data.user.skills} />
-        <ProjectSection projectData={data.user.projects} />
-        <TimelineSection timelineData={data.user.timeline} />
-        <TestimonialSection testimonialData={data.user.testimonials} />
-        <ContactSection
-          email={data.user.about.contactEmail}
-          location={data.user.about.address}
-          phone={data.user.about.phoneNumber}
-        />
-        <Footer socials={data.user.social_handles} />
+        <Hero heroData={data.about} />
+        <About aboutData={data.about} />
+        <Skills skillData={data.skills} />
+        {/* <AboutSection aboutData={data.about} />
+        <SkillSection skillData={data.skills} />
+        <ProjectSection projectData={data.projects} />
+        <TimelineSection timelineData={data.education} />
+        <TestimonialSection testimonialData={data.testimonials} />
+        <ContactSection contactData={data.contactDetails}/> */}
       </main>
     </>
   );
 }
 
-export const getStaticSideProps= async()=>{
+export const getStaticProps= ()=>{
   return{
     props:{
-      
+      data:defaultData
     }
   }
 }

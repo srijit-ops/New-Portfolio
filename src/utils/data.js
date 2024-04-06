@@ -1,86 +1,87 @@
-const data={
+export const defaultData={
     about:{
-        name:"Srijita Sengupta",
-        title:"",
-        subtitle:"",
-        about:"",
-        image:"",
-        quote:""
+        name:"Srijita",
+        title:"A frontend developer",
+        subtitle:"I develop bhah bhag bhag haha",
+        about:"Hi, I'm Srijita, a techgeek, passionate about web development and programming. I'm always madly craving for learning new emerging technologies and building real-world applications. Yeah, got it right! I'm just a regular out of the box developer who knows the subtle art of not giving a bug.",
+        image:"/Me.jpeg",
+        quote:"They think I'm hiding in the shadows, but I'm the shadows.",
+        lottie:"https://lottie.host/502b38fb-d4ef-4b92-a195-14e628ef540c/pM4dgPnehZ.json"
     },
     skills:[
         {
             skill:"HTML",
-            logo:"",
-            bg:"",
+            logo:"/html.png",
+            bg:"#FFF4F2",
             percentage: 90
         },
         {
             skill:"CSS",
-            logo:"",
-            bg:"",
+            logo:"/css.png",
+            bg:"#DDE8EE",
             percentage: 90
         },
         {
             skill:"Bootstrap",
-            logo:"",
-            bg:"",
+            logo:"/Bootstrap.png",
+            bg:"#EFE8FA",
             percentage: 90
         },
         {
             skill:"Tailwind CSS",
-            logo:"",
-            bg:"",
+            logo:"/tailwind.png",
+            bg:"#ccf8ff",
             percentage: 85
         },
         {
             skill:"Figma",
-            logo:"",
-            bg:"",
+            logo:"/figma.png",
+            bg:"#FCECE7",
             percentage: 70
         },{
             skill:"JavaScript",
-            logo:"",
-            bg:"",
+            logo:"/javascript.png",
+            bg:"#FDF7D1",
             percentage: 80
         },{
             skill:"React JS",
-            logo:"",
-            bg:"",
+            logo:"/react.png",
+            bg:"#ECFCFF",
             percentage: 70
         },{
             skill:"Next JS",
-            logo:"",
-            bg:"",
+            logo:"/next.svg",
+            bg:"#d4d4d4",
             percentage: 70
         },{
             skill:"React Native",
-            logo:"",
-            bg:"",
+            logo:"/react.png",
+            bg:"#ECFCFF",
             percentage: 60
         },{
             skill:"Redux",
-            logo:"",
-            bg:"",
+            logo:"/redux.png",
+            bg:"#EFE8FA",
             percentage: 75
         },{
             skill:"Zustand",
-            logo:"",
-            bg:"",
+            logo:"/zustand.png",
+            bg:"#FDF7D1",
             percentage: 70
         },{
             skill:"React Query",
-            logo:"",
-            bg:"",
+            logo:"/react query.png",
+            bg:"#ffe3ea",
             percentage: 70
         },{
-            skill:"Framer Motion",
-            logo:"",
-            bg:"",
+            skill:"Framer",
+            logo:"/framer motion.svg",
+            bg:"#F3DDE4",
             percentage: 60
         },{
             skill:"Github",
-            logo:"",
-            bg:"",
+            logo:"/github.png",
+            bg:"#d4d4d4",
             percentage: 80
         }
     ],
@@ -161,7 +162,7 @@ const data={
     projects:[
         {
             name:"Crypto Saga",
-            img:"",
+            img:"/project01.png",
             techstack:["React JS", "Tailwind CSS", "React Query"],
             github:"https://github.com/srijit-ops/Crypto-Saga",
             liveLink:"https://cryptosaga.netlify.app/",
@@ -169,7 +170,7 @@ const data={
         },
         {
             name:"Netflix Clone",
-            img:"",
+            img:"/project02.png",
             techstack:["React JS", "Bootstrap", "Firebase"],
             github:"https://github.com/srijit-ops/Netflix-Clone",
             liveLink:"https://its-netflix-clone.netlify.app/",
@@ -177,7 +178,7 @@ const data={
         },
         {
             name:"Weather Forecaster",
-            img:"",
+            img:"/project03.png",
             techstack:["React JS", "Bootstrap"],
             github:"https://github.com/srijit-ops/Weather-Forecaster",
             liveLink:"https://weather-forecasterr.netlify.app/",
@@ -188,7 +189,7 @@ const data={
         {
             name:"Parveen Kumar",
             job:"ODI Associate Consultant",
-            img:"",
+            img:"/parveen.jfif",
             detail:"Srijita has done internship technical content writer in doorstepdelhi. She has attitude of never giving up. She will definitely be an asset for the company she would join."
         },
         {
