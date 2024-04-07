@@ -8,7 +8,7 @@ import Styles from "../../styles/aboutsection.module.css";
 function About({ aboutData }) {
   return (
     <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5 relative">
-      <Heading name={"About Me."} />
+      <Heading name={"About Me."} subtitle={"More Than Just 1s and 0s."} />
       <div className="flex justify-between items-center flex-wrap w-full mt-11">
         <div className={`lg:w-4/12 w-full mb-5 lg:mb-0`}>
           {/* <Player

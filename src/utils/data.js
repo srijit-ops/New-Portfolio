@@ -200,8 +200,7 @@ export const defaultData={
         }
     ],
     contactDetails: {
-        location: 'Kolkata, West Bengal',
-        country: 'India',
+        location: 'Kolkata, India',
         email: 'srijitasengupta23@gmail.com',
         mobile: '+918910896623',
       },

@@ -4,6 +4,9 @@ import { defaultData } from "@/utils/data";
 import Hero from "@/components/herosection/Hero";
 import About from "@/components/aboutsection/About";
 import Skills from "@/components/skillsection/Skills";
+import Testimonials from "@/components/testimonialsection/Testimonials";
+import Contact from "@/components/contactsection/Contact";
+import Education from "@/components/educationsection/Education";
 
 export default function Home({data}) {
   console.log(data,"data chek")
@@ -35,6 +38,9 @@ export default function Home({data}) {
         <Hero heroData={data.about} />
         <About aboutData={data.about} />
         <Skills skillData={data.skills} />
+        <Education educationData={data.education} />
+        <Testimonials testimonialData={data.testimonials} />
+        <Contact contactData={data.contactDetails}/>
         {/* <AboutSection aboutData={data.about} />
         <SkillSection skillData={data.skills} />
         <ProjectSection projectData={data.projects} />
