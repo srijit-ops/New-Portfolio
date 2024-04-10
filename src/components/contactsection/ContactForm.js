@@ -1,6 +1,7 @@
 import React from "react";
 // import Button from "./common/Button";
 import Styles from "../../styles/contact.module.css"
+import Button from "../common/Button";
 
 function ContactForm() {
   return (
@@ -30,6 +31,7 @@ function ContactForm() {
           required
           className="block w-full mx-auto my-8 outline-none border dark:border-[#363636] focus:dark:border-gray-500 border-gray-100 focus:border-gray-300 p-3 rounded-[10px] bg-gray-100 dark:bg-[#363636]"
         ></textarea>
+        <Button type={"submit"} name={"Send"}/>
         {/* <button
           type="submit"
           aria-label="send mail"

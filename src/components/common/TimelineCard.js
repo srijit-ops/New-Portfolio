@@ -1,14 +1,8 @@
 import React from "react";
-import Styles from "../styles/timeline.module.css";
+import Styles from "../../styles/timeline.module.css";
 
 function TimelineCard({ data }) {
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    return `${date.toLocaleString("default", {
-      month: "short",
-    })} ${date.getDate()}, ${date.getFullYear()}`;
-  };
-
+console.log(data, "experi")
   return (
     <section className={`${Styles.section}`}>
       <ul
@@ -29,26 +23,31 @@ function TimelineCard({ data }) {
                   <p
                     className={`${Styles.timeline_event_thumbnail} text-white inline-block mb-5 transition-shadow duration-500 ease-in delay-100 px-4 py-1`}
                   >
-                    {formatDate(work.startDate)}-{formatDate(work.endDate)}
+                    {work.timeline}
                   </p>
                   <h1
                     className={
                       "sm:text-3xl text-xl tracking-wider text-[#3d4351] font-semibold overflow-y-hidden dark:text-white"
                     }
                   >
-                    {work.jobTitle}
+                    {work.name}
                   </h1>
                   <h1
                     className={
                       "sm:text-2xl text-lg text-[#2c3e50] my-5 dark:text-[#94949c]"
                     }
                   >
-                    {work.company_name}
+                    {work.place}
                   </h1>
-                  <p className="text-gray-700 dark:text-gray-300 pb-5">
-                    {work.summary}
+                  {
+                    work.grade && 
+                    <p className="text-gray-700 dark:text-gray-300 pb-5 font-semibold">
+                    {work.grade} {work.gradeUnit}
                   </p>
-                  <ul>
+                  }
+                  {
+                    work.bulletPoints && 
+                    <ul>
                     {work.bulletPoints.map((item, index) => {
                       return (
                         <li
@@ -60,6 +59,8 @@ function TimelineCard({ data }) {
                       );
                     })}
                   </ul>
+                  }
+                  
                 </div>
               </li>
             </React.Fragment>

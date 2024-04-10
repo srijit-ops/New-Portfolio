@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -14,11 +18,12 @@ function Header() {
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         className="flex justify-center items-center cursor-pointer"
       >
-        <i
+        <FontAwesomeIcon icon={theme==="light"?faMoon:faSun} color="text-gray-950 dark:text-white" className="text-2xl"/>
+        {/* <i
           className={`fa-solid fa-${
             theme === "light" ? "moon" : "sun"
           } text-gray-950 dark:text-white text-2xl`}
-        ></i>
+        ></i> */}
       </div>
     </div>
   );

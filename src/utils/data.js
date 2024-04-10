@@ -1,3 +1,5 @@
+import { faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
 export const defaultData={
     about:{
         name:"Srijita",
@@ -97,72 +99,59 @@ export const defaultData={
           name: 'Higher Secondary',
           place: 'Dum Dum Baidyanath Institution',
           grade: '87.4',
-          gradeUnit: 'Percentage',
+          gradeUnit: '%',
           timeline: '2018-2020',
         },
         {
           name: 'Secondary',
           place: 'Dum Dum Baidyanath Institution for Girls',
           grade: '94.7',
-          gradeUnit: 'Percentage',
+          gradeUnit: '%',
           timeline: '2017-2018',
         },
     ],
     experience:[
         {
-            name: 'Freeflow Ventures',
-            timeLine: 'March 2023 - February 2024',
-            title: 'Frontend Developer and Designer Intern',
+            place: 'Freeflow Ventures',
+            timeline: 'March 2023 - February 2024',
+            name: 'Frontend Developer and Designer Intern',
             bulletPoints:[
-                {
-                    id:0,
-                    work:"Built 2 enquiry based E-Commerce apps with 3D visualizerfor sellers & buyerswith React Native & integrated 3rd party libraries"
-                },
-                {
-                    id:1,
-                    work:"Developed the UI & implemented functionalities in their official venture building platform with ReactJS & integrated provided APIs."
-                },
-                {
-                    id:2,
-                    work:"Created designs & prototypes for an event management app & it’s admin panel, a debate management platform incl. audience, host, speakers screens, a bike & cab booking app incl. drivers & customers screens in Figma."
-                }
+                    "Built 2 enquiry based E-Commerce apps with 3D visualizerfor sellers & buyerswith React Native & integrated 3rd party libraries"
+                ,
+                    "Developed the UI & implemented functionalities in their official venture building platform with ReactJS & integrated provided APIs."
+                ,
+                
+                    "Created designs & prototypes for an event management app & it’s admin panel, a debate management platform incl. audience, host, speakers screens, a bike & cab booking app incl. drivers & customers screens in Figma."
+                
             ]
           },
           {
-            name: 'OkayG Softwares LLP',
-            timeLine: 'May 2022 - August 2022',
-            title: 'Frontend Developer Intern',
+            place: 'OkayG Softwares LLP',
+            timeline: 'May 2022 - August 2022',
+            name: 'Frontend Developer Intern',
             bulletPoints:[
-                {
-                    id:0,
-                    work:"Created the Frontend of an E-Learning website & social media website from scratch using HTML,Bootstrap & JavaScript"
-                },
-                {
-                    id:1,
-                    work:"Created responsive & user engaging websites with userfacing features & reusable components & optimized websites’ performance."
-                }
+                    "Created the Frontend of an E-Learning website & social media website from scratch using HTML,Bootstrap & JavaScript"
+                ,
+                    "Created responsive & user engaging websites with userfacing features & reusable components & optimized websites’ performance."
+                
             ]
           },
           {
-            name: 'Doorstep Delhi',
-            timeLine: 'May 2021 - August 2021',
-            title: 'Technical Writing Intern',
+            place: 'Doorstep Delhi',
+            timeline: 'May 2021 - August 2021',
+            name: 'Technical Writing Intern',
             bulletPoints:[
-                {
-                    id:0,
-                    work:"Built projects using Python, SQL, Machine Learning & Computer Vision."
-                },
-                {
-                    id:1,
-                    work:"Brainstormed & created tech blogs related to the projects."
-                }
+                    "Built projects using Python, SQL, Machine Learning & Computer Vision."
+                ,
+                    "Brainstormed & created tech blogs related to the projects."
+                
             ]
           }
     ],
     projects:[
         {
             name:"Crypto Saga",
-            img:"/project01.png",
+            img:"/crypto-saga.png",
             techstack:["React JS", "Tailwind CSS", "React Query"],
             github:"https://github.com/srijit-ops/Crypto-Saga",
             liveLink:"https://cryptosaga.netlify.app/",
@@ -170,7 +159,7 @@ export const defaultData={
         },
         {
             name:"Netflix Clone",
-            img:"/project02.png",
+            img:"/movie-hub.png",
             techstack:["React JS", "Bootstrap", "Firebase"],
             github:"https://github.com/srijit-ops/Netflix-Clone",
             liveLink:"https://its-netflix-clone.netlify.app/",
@@ -178,7 +167,39 @@ export const defaultData={
         },
         {
             name:"Weather Forecaster",
-            img:"/project03.png",
+            img:"/weather-app.png",
+            techstack:["React JS", "Bootstrap"],
+            github:"https://github.com/srijit-ops/Weather-Forecaster",
+            liveLink:"https://weather-forecasterr.netlify.app/",
+            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+        },
+        {
+            name:"Task Tracker",
+            img:"/task-tracker.png",
+            techstack:["React JS", "Bootstrap"],
+            github:"https://github.com/srijit-ops/Weather-Forecaster",
+            liveLink:"https://weather-forecasterr.netlify.app/",
+            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+        },
+        {
+            name:"Melodify",
+            img:"/melodify.png",
+            techstack:["React JS", "Bootstrap"],
+            github:"https://github.com/srijit-ops/Weather-Forecaster",
+            liveLink:"https://weather-forecasterr.netlify.app/",
+            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+        },
+        {
+            name:"Snake Game",
+            img:"/snake-game.png",
+            techstack:["React JS", "Bootstrap"],
+            github:"https://github.com/srijit-ops/Weather-Forecaster",
+            liveLink:"https://weather-forecasterr.netlify.app/",
+            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+        },
+        {
+            name:"Image Wrapper",
+            img:"/wrapper.png",
             techstack:["React JS", "Bootstrap"],
             github:"https://github.com/srijit-ops/Weather-Forecaster",
             liveLink:"https://weather-forecasterr.netlify.app/",
@@ -204,9 +225,19 @@ export const defaultData={
         email: 'srijitasengupta23@gmail.com',
         mobile: '+918910896623',
       },
-      socialLinks: {
-        linkedIn: 'https://www.linkedin.com/in/srijita-sengupta-0561a81b5/',
-        github: 'https://github.com/srijit-ops',
-        twitter: 'https://twitter.com/srijita_11'
-      },
+      socialLinks: [
+        {
+            path: 'https://www.linkedin.com/in/srijita-sengupta-0561a81b5/',
+            icon: faLinkedinIn
+        },
+        {
+            path: 'https://twitter.com/srijita_11',
+            icon: faXTwitter
+        }
+        ,
+        {
+            path: 'https://github.com/srijit-ops',
+            icon: faGithub
+        }
+      ],
 }

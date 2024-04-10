@@ -3,6 +3,7 @@ import Heading from "../common/Heading";
 // import Button from "./common/Button";
 import Image from "next/image";
 import Styles from "../../styles/aboutsection.module.css";
+import Button from "../common/Button";
 // import { Player } from "@lottiefiles/react-lottie-player";
 
 function About({ aboutData }) {
@@ -30,7 +31,7 @@ function About({ aboutData }) {
               {aboutData.exp_year} years of expertise.
             </p>
           </div> */}
-          {/* <Button name={"Download Resume"} /> */}
+          <Button name={"Download Resume"}  isLink={true} download={"Srijita Sengupta Resume"} path={"/Srijita Sengupta Resume.pdf"}/>
         </div>
       </div>
     </div>

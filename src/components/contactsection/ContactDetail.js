@@ -1,14 +1,20 @@
 import React from "react";
 import Styles from "../../styles/contact.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { faPhone, faLocation, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 
 function ContactDetail({ email, location, phone }) {
   return (
     <div className="w-full">
-      <div className="flex justify-start items-start flex-row mb-8">
+      <a className="flex justify-start items-start flex-row mb-8 cursor-pointer" href='tel:8910896623'>
         <div
           className={`flex justify-center items-center rounded-[50%] p-4 w-12 h-12 shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px] mr-6 ${Styles.iconholder}`}
         >
-          <i class="fa-solid fa-phone text-white text-lg"></i>
+          <FontAwesomeIcon icon={faPhone} className="text-lg" inverse={true}/>
+          {/* <FontAwesomeIcon icon="fa-solid fa-phone" className="text-white text-lg"/> */}
+          {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
         </div>
         <div>
           <p className="text-gray-500 dark:text-gray-300 tracking-wide">
@@ -18,12 +24,13 @@ function ContactDetail({ email, location, phone }) {
             {phone}
           </p>
         </div>
-      </div>
-      <div className="flex justify-start items-start flex-row mb-8">
+      </a>
+      <a className="flex justify-start items-start flex-row mb-8 cursor-pointer" href='mailto:srijitasengupta23@gmail.com'>
         <div
           className={`flex justify-center items-center rounded-[50%] p-4 w-12 h-12 shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px] mr-6 ${Styles.iconholder}`}
         >
-          <i class="fa-solid fa-envelope text-white text-lg"></i>
+          <FontAwesomeIcon icon={faEnvelope}  className="text-lg" inverse={true}/>
+          {/* <FontAwesomeIcon icon="fa-solid fa-envelope" className="text-white text-lg"/> */}
         </div>
         <div>
           <p className="text-gray-500 dark:text-gray-300  tracking-wide">
@@ -33,12 +40,13 @@ function ContactDetail({ email, location, phone }) {
             {email}
           </p>
         </div>
-      </div>
-      <div className="flex justify-start items-start flex-row mb-8">
+      </a>
+      <a className="flex justify-start items-start flex-row mb-8 cursor-pointer">
         <div
           className={`flex justify-center items-center rounded-[50%] p-4 w-12 h-12 shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px] mr-6 ${Styles.iconholder}`}
         >
-          <i class="fa-solid fa-location-dot text-white text-lg"></i>
+          <FontAwesomeIcon icon={faLocation} className="text-lg" inverse={true}/>
+          {/* <FontAwesomeIcon icon="fa-solid fa-location" className="text-white text-lg"/> */}
         </div>
         <div>
           <p className="text-gray-500 dark:text-gray-300 tracking-wide">
@@ -48,7 +56,7 @@ function ContactDetail({ email, location, phone }) {
             {location}
           </p>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

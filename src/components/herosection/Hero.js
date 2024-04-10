@@ -2,15 +2,17 @@ import React from "react";
 import Styles from "../../styles/herosection.module.css";
 // import Button from "./common/Button";
 import Image from "next/image";
+import HoverBorderGradient from "../common/HoverBorderGradient";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-function Hero({ heroData }) {
+function Hero({ heroData, socials }) {
   // console.log(heroData)
   return (
     <div className="flex xl:justify-between lg:justify-center justify-center items-center flex-wrap w-full lg:px-28 sm:px-8 px-5 md:px-16 relative my-12">
       <div
         className={`${Styles.name_holder} xl:w-6/12 lg:w-full w-full mb-7 xl:mb-0`}
       >
-        
         <h1
           className={`relative sm:text-7xl text-4xl opacity-100 transform-none font-bold overflow-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`}
           before={`I'M ${heroData.name.toUpperCase()},`}
@@ -23,10 +25,23 @@ function Hero({ heroData }) {
         <h4 className="mt-7 font-[Caveat] font-semibold sm:text-5xl text-3xl text-[#FF69B4] overflow-y-hidden tracking-wider">
           {heroData.title}
         </h4>
-        <p className="mt-8 sm:text-lg text-base text-gray-700 tracking-wider dark:text-[#94949c]">
+        <p className="my-8 sm:text-lg text-base text-gray-700 tracking-wider dark:text-[#94949c]">
           {heroData.subtitle}.
         </p>
-        {/* <Button name={"Let's connect"} /> */}
+        <div className="flex justify-start items-center gap-8">
+          {socials.map((item, index) => {
+            return (
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="a"
+                path={item.path}
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+              >
+                <FontAwesomeIcon icon={item.icon} className="text-xl" />
+              </HoverBorderGradient>
+            );
+          })}
+        </div>
       </div>
       <div className="xl:w-5/12 lg:w-4/5 w-4/5 relative flex justify-center items-center cursor-pointer">
         <div
