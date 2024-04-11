@@ -9,6 +9,7 @@ import Contact from "@/components/contactsection/Contact";
 import Education from "@/components/educationsection/Education";
 import Experience from "@/components/experiencesection/Experience";
 import Projects from "@/components/projectsection/Projects";
+import Attraction from "@/components/Attraction";
 
 export default function Home({data}) {
   console.log(data,"data chek")
@@ -40,11 +41,13 @@ export default function Home({data}) {
         <Hero heroData={data.about} socials={data.socialLinks}/>
         <About aboutData={data.about} />
         <Skills skillData={data.skills} />
+        <Attraction/>
         <Projects projectData={data.projects}/>
         <Education educationData={data.education} />
         <Experience experienceData={data.experience}/>
         <Testimonials testimonialData={data.testimonials} />
         <Contact contactData={data.contactDetails}/>
+        
         {/* <AboutSection aboutData={data.about} />
         <SkillSection skillData={data.skills} />
         <ProjectSection projectData={data.projects} />

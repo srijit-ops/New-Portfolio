@@ -71,7 +71,7 @@ function Projects({ projectData }) {
           return (
             <div
               key={index}
-              className="xl:w-1/4 lg:w-5/12 sm:w-5/12 w-full m-3"
+              className="xl:w-1/4 lg:w-5/12 sm:w-5/12 w-full m-3 rounded-xl"
             >
               <ProjectCard
                 name={item.name}

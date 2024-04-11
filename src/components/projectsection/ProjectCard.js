@@ -15,12 +15,12 @@ function ProjectCard({
   const onCloseModal = () => setOpen(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full rounded-xl shadow-[0_2px_8px_0_rgba(99,99,99,0.2)] hover:shadow-[0_13px_27px_-5px_rgba(50,50,93,0.25),0_8px_16px_-8px_rgba(0,0,0,0.3)] transition-all">
       <div
-        className={`${Styles.card} h-56 overflow-hidden relative flex justify-between items-end cursor-pointer p-2 w-full`}
+        className={`${Styles.card} border-gray-200 border dark:border-black rounded-xl h-56 overflow-hidden relative flex justify-between items-end cursor-pointer p-2 w-full`}
       >
         <div
-          className={`${Styles.card_img} bg-contain bg-no-repeat bg-[50%_50%] w-full h-full absolute z-[1] left-0 top-0 transition-all duration-[0.3s]`}
+          className={`${Styles.card_img} bg-cover bg-no-repeat bg-[50%_50%] w-full h-full absolute z-[1] left-0 top-0 transition-all duration-[0.3s]`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
         <div

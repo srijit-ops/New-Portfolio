@@ -177,33 +177,33 @@ export const defaultData={
             name:"Task Tracker",
             img:"/task-tracker.png",
             techstack:["React JS", "Bootstrap"],
-            github:"https://github.com/srijit-ops/Weather-Forecaster",
-            liveLink:"https://weather-forecasterr.netlify.app/",
-            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+            github:"https://github.com/srijit-ops/React-Task-Tracker",
+            liveLink:"https://track-the-tasks.netlify.app/",
+            about:"Task Tracker is a website, made with HTML, Bootstrap and React JS where you can add tasks, due time and date through popups. You can also mark them as Done and delete the tasks as per requirements, filter the tasks based on completed or uncompleted. And don't get afraid!! this site won't lose your previous tasks after page refresh or after closing the browser until or unless you delete the tasks."
         },
         {
             name:"Melodify",
             img:"/melodify.png",
-            techstack:["React JS", "Bootstrap"],
-            github:"https://github.com/srijit-ops/Weather-Forecaster",
-            liveLink:"https://weather-forecasterr.netlify.app/",
-            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+            techstack:["JavaScript", "CSS"],
+            github:"https://github.com/srijit-ops/Melodify",
+            liveLink:"https://melodify-music-player.netlify.app/",
+            about:"Welcome to the Melodify music player where you can play music stored in assets folder using HTML5 audio API. It has features like- play and pause the song , changing to next and previous song with a progress bar, library where you can find all the songs, search pannel to search a song in the playlist. Also you can mark songs as your favourite and get them in the favourite songs panel."
         },
         {
             name:"Snake Game",
             img:"/snake-game.png",
-            techstack:["React JS", "Bootstrap"],
-            github:"https://github.com/srijit-ops/Weather-Forecaster",
-            liveLink:"https://weather-forecasterr.netlify.app/",
-            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+            techstack:["JavaScript", "CSS"],
+            github:"https://github.com/srijit-ops/Snake-game",
+            liveLink:"https://vanilla-snake-game.netlify.app/",
+            about:"A basic snake game made with HTML, CSS and Vanilla JS. Use arrow keys to move the snake. Testing testing just testing!"
         },
         {
             name:"Image Wrapper",
             img:"/wrapper.png",
-            techstack:["React JS", "Bootstrap"],
-            github:"https://github.com/srijit-ops/Weather-Forecaster",
-            liveLink:"https://weather-forecasterr.netlify.app/",
-            about:"A platform, built using weather API, to check weatherforecasts incl. humidity, wind speed, highest, lowest & real felt temperature, sunrise, sunset times, hourly forecast & it’s graphical representation"
+            techstack:["JavaScript", "CSS"],
+            github:"https://github.com/srijit-ops/wrap_it_up",
+            liveLink:"https://wrap-it-up.netlify.app/",
+            about:"A responsive website where you can upload any background removed picture and can convert it to a beautiful text-portrait with the help of Edit button and also you can download the editted pic by the Download button."
         }
     ],
     testimonials:[
