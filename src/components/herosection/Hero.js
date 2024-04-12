@@ -31,7 +31,8 @@ function Hero({ heroData, socials }) {
         <div className="flex justify-start items-center gap-8">
           {socials.map((item, index) => {
             return (
-              <HoverBorderGradient
+              <div key={index}>
+<HoverBorderGradient
                 containerClassName="rounded-full"
                 as="a"
                 path={item.path}
@@ -39,6 +40,8 @@ function Hero({ heroData, socials }) {
               >
                 <FontAwesomeIcon icon={item.icon} className="text-xl" />
               </HoverBorderGradient>
+              </div>
+              
             );
           })}
         </div>
@@ -58,13 +61,13 @@ function Hero({ heroData, socials }) {
                 className={`absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s] ${Styles.img}`}
               />
             </div>
-            <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
+            <div className={`${Styles.quote} relative flex overflow-y-hidden mx-8`}>
               <div className="absolute xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-white top-[0] left-[0] overflow-y-hidden">
                 ❝
               </div>
               <div>
-                <h4 className="text-white mt-6 xl:text-3xl lg:text-2xl sm:text-lg text-base">
-                  {heroData.quote}
+                <h4 className="text-white mt-6 xl:text-3xl lg:text-2xl sm:text-lg text-base text-center tracking-wider">
+                  {heroData.quote} &#x1F60E;
                 </h4>
               </div>
             </div>

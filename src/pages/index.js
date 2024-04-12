@@ -10,6 +10,8 @@ import Education from "@/components/educationsection/Education";
 import Experience from "@/components/experiencesection/Experience";
 import Projects from "@/components/projectsection/Projects";
 import Attraction from "@/components/Attraction";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Home({data}) {
   console.log(data,"data chek")
@@ -38,6 +40,7 @@ export default function Home({data}) {
         {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
       </Head>
       <main className={`pb-8  bg-white dark:bg-black relative`}>
+      <Header/>
         <Hero heroData={data.about} socials={data.socialLinks}/>
         <About aboutData={data.about} />
         <Skills skillData={data.skills} />
@@ -47,7 +50,7 @@ export default function Home({data}) {
         <Experience experienceData={data.experience}/>
         <Testimonials testimonialData={data.testimonials} />
         <Contact contactData={data.contactDetails}/>
-        
+        <Footer socials={data.socialLinks}/>
         {/* <AboutSection aboutData={data.about} />
         <SkillSection skillData={data.skills} />
         <ProjectSection projectData={data.projects} />

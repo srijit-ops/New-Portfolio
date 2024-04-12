@@ -4,8 +4,8 @@ export const defaultData={
     about:{
         name:"Srijita",
         title:"A frontend developer",
-        subtitle:"I develop bhah bhag bhag haha",
-        about:"Hi, I'm Srijita, a techgeek, passionate about web development and programming. I'm always madly craving for learning new emerging technologies and building real-world applications. Yeah, got it right! I'm just a regular out of the box developer who knows the subtle art of not giving a bug.",
+        subtitle:"I develop visually stunning and cool websites that leave a lasting impression",
+        about:"Hi, I'm Srijita, a techgeek, passionate about web development and programming. I'm always madly craving for learning new emerging technologies and building real-world applications. I want to create real impact on society by tech one day. Also I'm just a regular out of the box developer who knows the subtle art of not giving a bug.",
         image:"/Me.jpeg",
         quote:"They think I'm hiding in the shadows, but I'm the shadows.",
         lottie:"https://lottie.host/502b38fb-d4ef-4b92-a195-14e628ef540c/pM4dgPnehZ.json"
@@ -216,7 +216,7 @@ export const defaultData={
         {
             name:"Shaista Anjum",
             job:"Full Stack Developer",
-            img:"",
+            img:"/shaista.jpg",
             detail:"I've had the pleasure of working closely with Srijita at Freeflow, where she showcased exceptional skills as a React Native developer. Srijita's dedication to her craft, combined with her strong problem-solving abilities, consistently contributed to the success of our projects. Her proactive approach and collaborative mindset make her a valuable asset to any team. I highly recommend Srijita for her technical expertise and professionalism."
         }
     ],

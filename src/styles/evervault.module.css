@@ -1,0 +1,6 @@
+.textHolder:hover .text{
+    @apply hidden;
+}
+.textHolder:hover .hoveredText{
+    @apply block;
+}

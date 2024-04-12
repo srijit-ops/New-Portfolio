@@ -15,6 +15,20 @@ const gradientId = "hello";
 const gradientTransform = "rotate(90)";
 
 function SkillCard({ skill, percentage, logo, bg}) {
+  // const [hovered, setHovered] = useState(false);
+  const [hoveredPercentage, setHoveredPercentage] = useState(0);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+    setHoveredPercentage(0)
+    setTimeout(()=>setHoveredPercentage(percentage),800)
+    // setHoveredPercentage(90);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+    setHoveredPercentage(percentage);
+  };
   const { theme } = useTheme();
   const [hovered, setHovered] = useState(false);
   return (
@@ -29,21 +43,25 @@ function SkillCard({ skill, percentage, logo, bg}) {
         {(value) => (
           <CircularProgressbarWithChildren
             strokeWidth={8}
-            value={percentage}
+            // value={percentage}
+            value={hovered ? hoveredPercentage : percentage}
             styles={{
-              path: { stroke: `url(#${gradientId})`, height: "100%" },
+              path: { stroke: `url(#${gradientId})`, height: "100%", transition: 'stroke-dashoffset 0.5s ease 0s', },
               trail: {
                 stroke: theme === "dark" ? "#424242" : "#f1f1f1",
               },
             }}
           >
             <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
               className={
+                
                 `w-20 h-20 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`
               }
               style={{backgroundColor:bg}}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
+              // onMouseEnter={() => setHovered(true)}
+              // onMouseLeave={() => setHovered(false)}
             >
               {/* {hovered ? (
                 <p className="font-semibold text-lg text-gray-700 text-center dark:text-white">

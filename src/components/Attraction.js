@@ -8,8 +8,8 @@ function Attraction() {
           Hover the text slowly and see the magic.
         </TextRevealCardDescription>
         <TextRevealCard
-        text="You know the business"
-        revealText="I know the tech. "
+        text="You've a cool idea?"
+        revealText="I will make it reaity."
       />
       <TextRevealCardTitle>
       So, let's collaborate.
