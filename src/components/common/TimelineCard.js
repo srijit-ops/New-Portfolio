@@ -2,7 +2,6 @@ import React from "react";
 import Styles from "../../styles/timeline.module.css";
 
 function TimelineCard({ data }) {
-console.log(data, "experi")
   return (
     <section className={`${Styles.section}`}>
       <ul
@@ -39,28 +38,25 @@ console.log(data, "experi")
                   >
                     {work.place}
                   </h1>
-                  {
-                    work.grade && 
+                  {work.grade && (
                     <p className="text-gray-700 dark:text-gray-300 pb-5 font-semibold">
-                    {work.grade} {work.gradeUnit}
-                  </p>
-                  }
-                  {
-                    work.bulletPoints && 
+                      {work.grade} {work.gradeUnit}
+                    </p>
+                  )}
+                  {work.bulletPoints && (
                     <ul>
-                    {work.bulletPoints.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="text-gray-600 text-sm mb-4 dark:text-gray-400"
-                        >
-                          - {item}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  }
-                  
+                      {work.bulletPoints.map((item, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className="text-gray-600 text-sm mb-4 dark:text-gray-400"
+                          >
+                            - {item}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
                 </div>
               </li>
             </React.Fragment>

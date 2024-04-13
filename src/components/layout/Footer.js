@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import Styles from "../../styles/footer.module.css";
 import HoverBorderGradient from "../common/HoverBorderGradient";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -12,24 +10,25 @@ function Footer({ socials }) {
         @2024 Srijita. All rights reserved.
       </p>
       <div className="flex justify-center items-center flex-wrap mb-8">
-      <div className="flex justify-start items-center gap-8">
+        <div className="flex justify-start items-center gap-8">
           {socials.map((item, index) => {
             return (
-                <div key={index}>
-<HoverBorderGradient
-                containerClassName="rounded-full"
-                as="a"
-                path={item.path}
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <FontAwesomeIcon icon={item.icon} className="sm:text-xl text-lg" />
-              </HoverBorderGradient>
-                </div>
-              
+              <div key={index}>
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="a"
+                  path={item.path}
+                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                >
+                  <FontAwesomeIcon
+                    icon={item.icon}
+                    className="sm:text-xl text-lg"
+                  />
+                </HoverBorderGradient>
+              </div>
             );
           })}
         </div>
-        
       </div>
     </div>
   );

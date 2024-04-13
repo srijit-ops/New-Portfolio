@@ -12,7 +12,10 @@ import Heading from "../common/Heading";
 function Testimonials({ testimonialData }) {
   return (
     <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
-      <Heading name={"Testimonials."} subtitle={"What they say behind my back."}/>
+      <Heading
+        name={"Testimonials."}
+        subtitle={"What they say behind my back."}
+      />
       <Swiper
         slidesPerView={1}
         breakpoints={{

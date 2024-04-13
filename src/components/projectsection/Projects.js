@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import HoverBorderGradient from "../common/HoverBorderGradient";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
-// import Styles from "../styles/button.module.css";
 
 function Projects({ projectData }) {
   const { theme } = useTheme();
@@ -39,34 +38,32 @@ function Projects({ projectData }) {
   const handleApplyFilter = () => {
     onCloseModal();
   };
-  const filteredProjects = projectData
-    .filter((project) => {
-      const projectTechStacks = project.techstack.map((tech) => tech.trim());
-      return selectedTechStacks.every((tech) =>
-        projectTechStacks.includes(tech)
-      );
-    })
-    // .sort((a, b) => a.sequence - b.sequence);
+  const filteredProjects = projectData.filter((project) => {
+    const projectTechStacks = project.techstack.map((tech) => tech.trim());
+    return selectedTechStacks.every((tech) => projectTechStacks.includes(tech));
+  });
 
   return (
     <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
-        <div className="flex justify-between items-start">
-            <div>
-            <Heading name={"Projects."} subtitle={"Just some stupid stuffs maybe."}/>
-            </div>
-            <div className="mt-6">
-            <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                onClick={onOpenModal}
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <FontAwesomeIcon icon={faFilter} className="text-lg" />
-              </HoverBorderGradient>
-            </div>
+      <div className="flex justify-between items-start">
+        <div>
+          <Heading
+            name={"Projects."}
+            subtitle={"Just some stupid stuffs maybe."}
+          />
         </div>
+        <div className="mt-6">
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            onClick={onOpenModal}
+            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+          >
+            <FontAwesomeIcon icon={faFilter} className="text-lg" />
+          </HoverBorderGradient>
+        </div>
+      </div>
       <div className="flex justify-between items-center flex-wrap">
-        {/* {console.log(filteredProjects, "filter")} */}
         {filteredProjects.map((item, index) => {
           return (
             <div
@@ -104,7 +101,9 @@ function Projects({ projectData }) {
                 key={tech}
                 className="flex justify-between items-center mb-5"
               >
-                <p className="text-gray-700 dark:text-gray-300 sm:text-base text-sm">{tech}</p>
+                <p className="text-gray-700 dark:text-gray-300 sm:text-base text-sm">
+                  {tech}
+                </p>
                 <input
                   type="checkbox"
                   checked={selectedTechStacks.includes(tech)}
@@ -113,7 +112,7 @@ function Projects({ projectData }) {
               </div>
             ))}
             <div className="flex justify-center items-center">
-            <Button name={"Apply"} onClick={handleApplyFilter}/>
+              <Button name={"Apply"} onClick={handleApplyFilter} />
             </div>
           </div>
         </Modal>

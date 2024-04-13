@@ -1,7 +1,7 @@
 import React from "react";
-import Styles from "../../styles/testimonial.module.css"
+import Styles from "../../styles/testimonial.module.css";
 
-function TestimonialCard({name, img, quote, position }) {
+function TestimonialCard({ name, img, quote, position }) {
   return (
     <section
       className={`p-8 sm:px-8 px-2 block h-full mb-8 bg-white dark:bg-black cursor-pointer`}

@@ -14,15 +14,13 @@ import Styles from "../../styles/skills.module.css";
 const gradientId = "hello";
 const gradientTransform = "rotate(90)";
 
-function SkillCard({ skill, percentage, logo, bg}) {
-  // const [hovered, setHovered] = useState(false);
+function SkillCard({ skill, percentage, logo, bg }) {
   const [hoveredPercentage, setHoveredPercentage] = useState(0);
 
   const handleMouseEnter = () => {
     setHovered(true);
-    setHoveredPercentage(0)
-    setTimeout(()=>setHoveredPercentage(percentage),800)
-    // setHoveredPercentage(90);
+    setHoveredPercentage(0);
+    setTimeout(() => setHoveredPercentage(percentage), 800);
   };
 
   const handleMouseLeave = () => {
@@ -46,37 +44,30 @@ function SkillCard({ skill, percentage, logo, bg}) {
             // value={percentage}
             value={hovered ? hoveredPercentage : percentage}
             styles={{
-              path: { stroke: `url(#${gradientId})`, height: "100%", transition: 'stroke-dashoffset 0.5s ease 0s', },
+              path: {
+                stroke: `url(#${gradientId})`,
+                height: "100%",
+                transition: "stroke-dashoffset 0.5s ease 0s",
+              },
               trail: {
                 stroke: theme === "dark" ? "#424242" : "#f1f1f1",
               },
             }}
           >
             <div
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-              className={
-                
-                `sm:w-20 sm:h-20 w-16 h-16 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`
-              }
-              style={{backgroundColor:bg}}
-              // onMouseEnter={() => setHovered(true)}
-              // onMouseLeave={() => setHovered(false)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className={`sm:w-20 sm:h-20 w-16 h-16 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`}
+              style={{ backgroundColor: bg }}
             >
-              {/* {hovered ? (
-                <p className="font-semibold text-lg text-gray-700 text-center dark:text-white">
-                  {percentage}%
-                </p>
-              ) : ( */}
-                <div className={`${Styles.img_container} w-full`}>
-                  <Image
-                    src={logo}
-                    alt={skill}
-                    layout="fill"
-                    className={`${Styles.img}`}
-                  />
-                </div>
-               {/* )} */}
+              <div className={`${Styles.img_container} w-full`}>
+                <Image
+                  src={logo}
+                  alt={skill}
+                  layout="fill"
+                  className={`${Styles.img}`}
+                />
+              </div>
             </div>
           </CircularProgressbarWithChildren>
         )}

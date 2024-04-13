@@ -1,15 +1,9 @@
-"use client";
 import React, { useEffect, useRef, useState, memo } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { cn } from "@/utils/cn";
 
-export const TextRevealCard = ({
-  text,
-  revealText,
-  children,
-  className,
-}) => {
+export const TextRevealCard = ({ text, revealText, children, className }) => {
   const [widthPercentage, setWidthPercentage] = useState(0);
   const cardRef = useRef(null);
   const [left, setLeft] = useState(0);
@@ -86,12 +80,7 @@ export const TextRevealCard = ({
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
           className="absolute bg-white dark:bg-black z-20  will-change-transform"
         >
-          <p
-            // style={{
-            //   textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
-            // }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] py-10 font-bold text-gray-950 dark:text-white text-center bg-clip-text  bg-gradient-to-b from-white to-neutral-300"
-          >
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] py-10 font-bold text-gray-950 dark:text-white text-center bg-clip-text  bg-gradient-to-b from-white to-neutral-300">
             {revealText}
           </p>
         </motion.div>
@@ -116,23 +105,29 @@ export const TextRevealCard = ({
   );
 };
 
-export const TextRevealCardTitle = ({
-  children,
-  className,
-}) => {
+export const TextRevealCardTitle = ({ children, className }) => {
   return (
-    <h2 className={twMerge("text-[#ff69b4] font-[Caveat] font-semibold md:text-4xl sm:text-3xl text-3xl tracking-wider mb-2 text-center", className)}>
+    <h2
+      className={twMerge(
+        "text-[#ff69b4] font-[Caveat] font-semibold md:text-4xl sm:text-3xl text-3xl tracking-wider mb-2 text-center",
+        className
+      )}
+    >
       {children}
     </h2>
   );
 };
 
-export const TextRevealCardDescription = ({
-  children,
-  className,
-}) => {
+export const TextRevealCardDescription = ({ children, className }) => {
   return (
-    <p className={twMerge("text-gray-400 dark:text-gray-600 text-sm tracking-wider text-center", className)}>{children}</p>
+    <p
+      className={twMerge(
+        "text-gray-400 dark:text-gray-600 text-sm tracking-wider text-center",
+        className
+      )}
+    >
+      {children}
+    </p>
   );
 };
 
@@ -165,8 +160,8 @@ const Stars = () => {
             backgroundColor: "white",
             borderRadius: "50%",
             zIndex: 1,
-            background:"#d400d4",
-            color:"#d400d4"
+            background: "#d400d4",
+            color: "#d400d4",
           }}
           className="inline-block"
         ></motion.span>

@@ -5,10 +5,9 @@ import Styles from "../../styles/project.module.css";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-
 
 function ProjectModal({
   open,
@@ -57,11 +56,6 @@ function ProjectModal({
                 key={index}
               >
                 <p className="sm:text-base text-xs">{item}</p>
-                {/* <Tabs
-              data={price}
-              key={Math.random()}
-              
-            /> */}
               </div>
             );
           })}
@@ -72,15 +66,21 @@ function ProjectModal({
 
           <div className="flex justify-center gap-12 items-center mt-8">
             <a href={github} className="flex justify-center items-center ">
-            <FontAwesomeIcon icon={faGithub} className="sm:text-3xl text-2xl" inverse={theme==="dark"?true:false}/>
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="sm:text-3xl text-2xl"
+                inverse={theme === "dark" ? true : false}
+              />
             </a>
             <a href={liveUrl} className="flex justify-center items-center ">
-            <FontAwesomeIcon icon={faLink} className="sm:text-2xl text-xl" inverse={theme==="dark"?true:false}/>
+              <FontAwesomeIcon
+                icon={faLink}
+                className="sm:text-2xl text-xl"
+                inverse={theme === "dark" ? true : false}
+              />
             </a>
           </div>
-          {/* <Button name={"View"}/> */}
         </div>
-
       </div>
     </Modal>
   );

@@ -2,16 +2,9 @@ import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 import Styles from "../../styles/project.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { faEye } from "@fortawesome/free-solid-svg-icons"
-function ProjectCard({
-  name,
-  img,
-  tech,
-  detail,
-  github,
-  liveUrl,
-}) {
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+function ProjectCard({ name, img, tech, detail, github, liveUrl }) {
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
@@ -35,8 +28,11 @@ function ProjectCard({
           className={`${Styles.card_box} flex justify-center items-center z-[2] relative overflow-hidden flex-col backdrop-blur-[5px] translate-x-[0%] translate-y-[20%] opacity-0 p-4`}
           onClick={onOpenModal}
         >
-          <FontAwesomeIcon icon={faEye} className="sm:text-lg text-base" inverse={true}/>
-          
+          <FontAwesomeIcon
+            icon={faEye}
+            className="sm:text-lg text-base"
+            inverse={true}
+          />
         </div>
       </div>
       <ProjectModal
