@@ -10,7 +10,7 @@ function Contact({ contactData }) {
         name={"Contact Me."}
         subtitle={"Hit Me Up: Let's Talk Code, Coffee, and Nature."}
       />
-      <div className="flex justify-between items-center flex-wrap flex-row mt-14">
+      <div className="flex justify-between items-start flex-wrap flex-row mt-14">
         <div className="xl:w-3/12 w-full mx-4">
           <ContactDetail
             email={contactData.email}
