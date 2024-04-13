@@ -13,7 +13,7 @@ function Skills({ skillData }) {
             return (
               <div
                 key={index}
-                className="xl:w-[9%]  md:w-[15%] sm:w-[35%] w-[35%] mx-6 mb-9 flex justify-center items-center"
+                className="xl:w-[9%]  md:w-[15%] sm:w-[35%] w-[35%] sm:mx-6 mx-4 mb-9 flex justify-center items-center"
               >
                 <SkillCard
                   skill={item.skill}

@@ -35,12 +35,12 @@ function About({ aboutData }) {
       /> */}
         </div>
         <div className={`lg:w-7/12 w-full`}>
-          <p className="text-gray-700 tracking-wide leading-8 dark:text-[#94949c]">
+          <p className="text-gray-700 tracking-wide leading-8 dark:text-[#94949c] sm:text-base text-sm">
             {aboutData.about}
           </p>
           <div className="inline-block mt-6">
             <p
-              className={`text-transparent font-semibold text-xl tracking-wide ${Styles.gradientStyle}`}
+              className={`text-transparent font-semibold sm:text-xl text-base tracking-wide ${Styles.gradientStyle}`}
             >
               Currently looking for new opportunities!
             </p>

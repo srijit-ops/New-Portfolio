@@ -216,7 +216,7 @@ export const defaultData={
         {
             name:"Shaista Anjum",
             job:"Full Stack Developer",
-            img:"/shaista.jpg",
+            img:"/Shaista.jpeg",
             detail:"I've had the pleasure of working closely with Srijita at Freeflow, where she showcased exceptional skills as a React Native developer. Srijita's dedication to her craft, combined with her strong problem-solving abilities, consistently contributed to the success of our projects. Her proactive approach and collaborative mindset make her a valuable asset to any team. I highly recommend Srijita for her technical expertise and professionalism."
         }
     ],

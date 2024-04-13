@@ -17,10 +17,10 @@ function ContactDetail({ email, location, phone }) {
           {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
         </div>
         <div>
-          <p className="text-gray-500 dark:text-gray-300 tracking-wide">
+          <p className="text-gray-500 sm:text-base text-sm dark:text-gray-300 tracking-wide">
             Phone
           </p>
-          <p className="sm:text-xl text-base font-semibold text-gray-950 tracking-wide mt-3  dark:text-white">
+          <p className="sm:text-xl text-sm font-semibold text-gray-950 tracking-wide mt-3  dark:text-white">
             {phone}
           </p>
         </div>
@@ -33,10 +33,10 @@ function ContactDetail({ email, location, phone }) {
           {/* <FontAwesomeIcon icon="fa-solid fa-envelope" className="text-white text-lg"/> */}
         </div>
         <div>
-          <p className="text-gray-500 dark:text-gray-300  tracking-wide">
+          <p className="text-gray-500 sm:text-base text-sm dark:text-gray-300  tracking-wide">
             Mail
           </p>
-          <p className="sm:text-xl text-base font-semibold text-gray-950 tracking-wide mt-3  dark:text-white">
+          <p className="sm:text-xl text-sm font-semibold text-gray-950 tracking-wide mt-3  dark:text-white">
             {email}
           </p>
         </div>
@@ -49,10 +49,10 @@ function ContactDetail({ email, location, phone }) {
           {/* <FontAwesomeIcon icon="fa-solid fa-location" className="text-white text-lg"/> */}
         </div>
         <div>
-          <p className="text-gray-500 dark:text-gray-300 tracking-wide">
+          <p className="text-gray-500 sm:text-base text-sm dark:text-gray-300 tracking-wide">
             Location
           </p>
-          <p className="sm:text-xl text-base font-semibold text-gray-950 tracking-wide mt-3 dark:text-white">
+          <p className="sm:text-xl text-sm font-semibold text-gray-950 tracking-wide mt-3 dark:text-white">
             {location}
           </p>
         </div>

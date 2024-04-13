@@ -62,13 +62,13 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-white dark:bg-black w-fit rounded-lg p-8 relative overflow-hidden",
+        "bg-white dark:bg-black md:w-[50rem] sm:w-[45rem] w-[35rem] rounded-lg p-8 relative overflow-hidden",
         className
       )}
     >
       {children}
 
-      <div className="h-40  relative flex items-center overflow-hidden">
+      <div className="h-36 relative   overflow-hidden">
         <motion.div
           style={{
             width: "100%",
@@ -90,7 +90,7 @@ export const TextRevealCard = ({
             // style={{
             //   textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             // }}
-            className="text-base sm:text-[4.5rem] py-10 font-bold text-gray-950 dark:text-white text-center bg-clip-text  bg-gradient-to-b from-white to-neutral-300"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] py-10 font-bold text-gray-950 dark:text-white text-center bg-clip-text  bg-gradient-to-b from-white to-neutral-300"
           >
             {revealText}
           </p>
@@ -106,7 +106,7 @@ export const TextRevealCard = ({
         ></motion.div>
 
         <div className=" overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
-          <p className="text-base sm:text-[4.5rem] py-10 font-bold bg-clip-text text-center bg-gray-500 dark:bg-[#323238]">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] py-10 font-bold bg-clip-text text-center bg-gray-500 dark:bg-[#323238]">
             {text}
           </p>
           <MemoizedStars />
@@ -121,7 +121,7 @@ export const TextRevealCardTitle = ({
   className,
 }) => {
   return (
-    <h2 className={twMerge("text-[#ff69b4] font-[Caveat] font-semibold text-4xl tracking-wider mb-2 text-center", className)}>
+    <h2 className={twMerge("text-[#ff69b4] font-[Caveat] font-semibold md:text-4xl sm:text-3xl text-3xl tracking-wider mb-2 text-center", className)}>
       {children}
     </h2>
   );

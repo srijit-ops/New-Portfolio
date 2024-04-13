@@ -96,7 +96,7 @@ function Projects({ projectData }) {
           }}
         >
           <div className="py-5 px-4">
-            <h2 className="text-gray-950 font-semibold text-lg mb-8 mt-4 dark:text-white">
+            <h2 className="text-gray-950 font-semibold sm:text-lg text-base mb-8 mt-4 dark:text-white tracking-wider">
               Select Tech Stacks
             </h2>
             {techs.map((tech) => (
@@ -104,7 +104,7 @@ function Projects({ projectData }) {
                 key={tech}
                 className="flex justify-between items-center mb-5"
               >
-                <p className="text-gray-700 dark:text-gray-300">{tech}</p>
+                <p className="text-gray-700 dark:text-gray-300 sm:text-base text-sm">{tech}</p>
                 <input
                   type="checkbox"
                   checked={selectedTechStacks.includes(tech)}

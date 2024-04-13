@@ -23,7 +23,7 @@ function TestimonialCard({name, img, quote, position }) {
             className={`sm:basis-20 rounded-tr-none rounded-br-none rounded-tl-xl rounded-bl-xl bg-gradient-to-b from-[#d400d4] to-[#00ccff] ${Styles.pattern}`}
           ></div>
           <div
-            className={`${Styles.base} sm:basis-[calc(100%_-_80px)]  text-base leading-[1.62rem] bg-white dark:bg-[#363636] pl-20 pr-[1.9rem] py-10 rounded-[0_0.75rem_0.75rem_0]`}
+            className={`${Styles.base} sm:basis-[calc(100%_-_80px)]  text-sm sm:text-base leading-[1.62rem] bg-white dark:bg-[#363636] pl-20 pr-[1.9rem] py-10 rounded-[0_0.75rem_0.75rem_0]`}
           >
             <blockquote className="dark:text-gray-300 text-left" cite="">
               {quote}

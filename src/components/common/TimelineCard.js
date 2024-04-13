@@ -21,20 +21,20 @@ console.log(data, "experi")
                   className={`${Styles.timeline_event_copy} p-8 sm:px-8 px-1 relative w-4/5 left-16 -top-7`}
                 >
                   <p
-                    className={`${Styles.timeline_event_thumbnail} text-white inline-block mb-5 transition-shadow duration-500 ease-in delay-100 px-4 py-1`}
+                    className={`${Styles.timeline_event_thumbnail} text-white inline-block mb-5 transition-shadow duration-500 ease-in delay-100 px-4 py-1 sm:text-base text-sm`}
                   >
                     {work.timeline}
                   </p>
                   <h1
                     className={
-                      "sm:text-3xl text-xl tracking-wider text-[#3d4351] font-semibold overflow-y-hidden dark:text-white"
+                      "sm:text-2xl text-lg tracking-wider text-[#3d4351] font-semibold overflow-y-hidden dark:text-white"
                     }
                   >
                     {work.name}
                   </h1>
                   <h1
                     className={
-                      "sm:text-2xl text-lg text-[#2c3e50] my-5 dark:text-[#94949c]"
+                      "sm:text-xl text-base text-[#2c3e50] my-5 dark:text-[#94949c] font-semibold tracking-wider"
                     }
                   >
                     {work.place}

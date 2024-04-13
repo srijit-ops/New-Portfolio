@@ -57,7 +57,7 @@ function SkillCard({ skill, percentage, logo, bg}) {
             onMouseLeave={handleMouseLeave}
               className={
                 
-                `w-20 h-20 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`
+                `sm:w-20 sm:h-20 w-16 h-16 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`
               }
               style={{backgroundColor:bg}}
               // onMouseEnter={() => setHovered(true)}
@@ -81,7 +81,7 @@ function SkillCard({ skill, percentage, logo, bg}) {
           </CircularProgressbarWithChildren>
         )}
       </ProgressProvider>
-      <p className="text-gray-700 dark:text-white overflow-y-hidden text-center font-semibold tracking-wide mt-4">
+      <p className="text-gray-700 text-sm sm:text-base dark:text-white overflow-y-hidden text-center font-semibold tracking-wide mt-4">
         {skill}
       </p>
     </div>

@@ -38,7 +38,7 @@ function Hero({ heroData, socials }) {
                 path={item.path}
                 className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
               >
-                <FontAwesomeIcon icon={item.icon} className="text-xl" />
+                <FontAwesomeIcon icon={item.icon} className="sm:text-xl text-lg" />
               </HoverBorderGradient>
               </div>
               

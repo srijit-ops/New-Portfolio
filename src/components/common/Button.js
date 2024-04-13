@@ -9,7 +9,7 @@ function Button({ name, isLink, type, onClick, path, download }) {
         download={download ? download : null}
         className={`${Styles.button} flex justify-between items-center w-fit mt-7 relative py-5 px-6 transition-all duration-200 ease-in-out before:absolute before:top-0 before:left-0 before:block before:border-28 before:rounded-full before:w-14 before:h-14 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full active:transform scale-96`}
       >
-        <span className="overflow-y-hidden relative text-base leading-none font-extrabold tracking-widest uppercase align-middle">
+        <span className="overflow-y-hidden relative sm:text-base text-sm leading-none font-extrabold tracking-widest uppercase align-middle">
           {name}
         </span>
         <svg
