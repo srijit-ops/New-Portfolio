@@ -40,13 +40,19 @@ export const defaultData = {
       skill: "Tailwind CSS",
       logo: "/tailwind.png",
       bg: "#ccf8ff",
-      percentage: 85,
+      percentage: 80,
     },
     {
       skill: "Figma",
       logo: "/figma.png",
       bg: "#FCECE7",
-      percentage: 70,
+      percentage: 60,
+    },
+    {
+      skill: "shadcn/ui",
+      logo: "/shadcnui.png",
+      bg: "#d4d4d4",
+      percentage: 60,
     },
     {
       skill: "JavaScript",
@@ -76,26 +82,26 @@ export const defaultData = {
       skill: "Redux",
       logo: "/redux.png",
       bg: "#EFE8FA",
-      percentage: 75,
-    },
-    {
-      skill: "Zustand",
-      logo: "/zustand.png",
-      bg: "#FDF7D1",
       percentage: 70,
     },
+    // {
+    //   skill: "Zustand",
+    //   logo: "/zustand.png",
+    //   bg: "#FDF7D1",
+    //   percentage: 70,
+    // },
     {
       skill: "React Query",
       logo: "/react query.png",
       bg: "#ffe3ea",
       percentage: 70,
     },
-    {
-      skill: "Framer",
-      logo: "/framer motion.svg",
-      bg: "#F3DDE4",
-      percentage: 60,
-    },
+    // {
+    //   skill: "Framer",
+    //   logo: "/framer motion.svg",
+    //   bg: "#F3DDE4",
+    //   percentage: 60,
+    // },
     {
       skill: "Github",
       logo: "/github.png",
@@ -132,9 +138,10 @@ export const defaultData = {
       timeline: "March 2023 - February 2024",
       name: "Frontend Developer and Designer Intern",
       bulletPoints: [
-        "Built 2 enquiry based E-Commerce apps with 3D visualizerfor sellers & buyerswith React Native & integrated 3rd party libraries",
-        "Developed the UI & implemented functionalities in their official venture building platform with ReactJS & integrated provided APIs.",
-        "Created designs & prototypes for an event management app & it’s admin panel, a debate management platform incl. audience, host, speakers screens, a bike & cab booking app incl. drivers & customers screens in Figma.",
+        "Developed the UI & implemented functionalities in an interior materials & service providing website with Next JS.",
+        "Built 2 cross platform apps for sellers & buyers forthe interior materials & service providing website with React Native & integrated 3rd party libraries.",
+        "Developed the UI of a website focused on enhancing brain power & productivity with React JS.",
+        "Created designs & prototypes for an event management app & it’s admin panel, a debate management platform incl. audience, host, speakers screens, a bike & cab booking app incl. drivers & customers screens in Figma."
       ],
     },
     {
@@ -157,6 +164,24 @@ export const defaultData = {
     },
   ],
   projects: [
+    {
+      name: "Spend Smart",
+      img: "/spend-smart.png",
+      techstack: ["Next JS", "Tailwind CSS", "shadcn/ui", "Next Auth", "React Hook Form", "Yup"],
+      github: "https://github.com/srijit-ops/spend-smart",
+      liveLink: "https://spend-smart-drab.vercel.app/",
+      about:
+        "A smart expense tracker where one can set monthly savings target based on salary & achieve this goal seamlessly with features like categorized daily transaction details, interactive data visualizations & insightful analytics. Integrated Google Map & Google Places Autocomplete to track the expense location, Next Auth for user authentication, React hook form & Yup forforms.",
+    },
+    {
+      name: "Quiz Combat",
+      img: "/quiz-combat.png",
+      techstack: ["React JS", "Tailwind CSS", "React Query"],
+      github: "https://github.com/srijit-ops/QuizCombat",
+      liveLink: "https://quiz-combat.netlify.app/",
+      about:
+        "A website to solve different types of quiz with timer. Integrated Trivia API & used React Query for fetching live data"
+    },
     {
       name: "Crypto Saga",
       img: "/crypto-saga.png",
@@ -187,11 +212,11 @@ export const defaultData = {
     {
       name: "Task Tracker",
       img: "/task-tracker.png",
-      techstack: ["React JS", "Bootstrap"],
-      github: "https://github.com/srijit-ops/React-Task-Tracker",
-      liveLink: "https://track-the-tasks.netlify.app/",
+      techstack: ["React JS", "Tailwind CSS", "Redux"],
+      github: "https://github.com/srijit-ops/easy-search-assignment",
+      liveLink: "https://redux-task-tracker.netlify.app/",
       about:
-        "Task Tracker is a website, made with HTML, Bootstrap and React JS where you can add tasks, due time and date through popups. You can also mark them as Done and delete the tasks as per requirements, filter the tasks based on completed or uncompleted. And don't get afraid!! this site won't lose your previous tasks after page refresh or after closing the browser until or unless you delete the tasks.",
+        "A responsive task tracking website where you can add tasks, due time and date through popups. You can also mark them as Done and delete the tasks as per requirements, filter the tasks based on completed or uncompleted. And don't get afraid!! this site won't lose your previous tasks after page refresh or after closing the browser until or unless you delete the tasks.",
     },
     {
       name: "Melodify",
