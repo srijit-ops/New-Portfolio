@@ -1,6 +1,47 @@
 import React from "react";
 import Styles from "../../styles/timeline.module.css";
 
+const obj = [
+  {
+    name: "Karya's official website",
+    link: "https://www.karya.in/",
+  },
+  {
+    name: "End of The Year Report",
+    link: "https://reports.karya.in/",
+  },
+  {
+    name: "Platform V2",
+    link: "https://platform.karya.in/",
+  },
+  {
+    name: "Karya Platform",
+    link: "https://www.youtube.com/embed/XuiUtTQVVU4?si=jf7Iv7dzqysNtDDh",
+  },
+];
+const parseDescriptionWithLinks = (description, obj) => {
+  const matchedItem = obj.find((item) => description.includes(item.name));
+
+  if (!matchedItem) return description;
+
+  const parts = description.split(matchedItem.name);
+
+  return (
+    <>
+      {parts[0]}
+      <a
+        href={matchedItem.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-600 underline"
+      >
+        {matchedItem.name}
+      </a>
+      {parts[1]}
+    </>
+  );
+};
+
 function TimelineCard({ data }) {
   return (
     <section className={`${Styles.section}`}>
@@ -31,13 +72,16 @@ function TimelineCard({ data }) {
                   >
                     {work.name}
                   </h1>
-                  <h1
+                  <a
                     className={
-                      "sm:text-xl text-base text-[#2c3e50] my-5 dark:text-[#94949c] font-semibold tracking-wider"
+                      "sm:text-xl text-base text-[#2c3e50] my-4 dark:text-[#94949c] font-semibold tracking-wider inline-block"
                     }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={work.link}
                   >
                     {work.place}
-                  </h1>
+                  </a>
                   {work.grade && (
                     <p className="text-gray-700 dark:text-gray-300 pb-5 font-semibold">
                       {work.grade} {work.gradeUnit}
@@ -51,7 +95,7 @@ function TimelineCard({ data }) {
                             key={index}
                             className="text-gray-600 text-sm mb-4 dark:text-gray-400"
                           >
-                            - {item}
+                            - {parseDescriptionWithLinks(item, obj)}
                           </li>
                         );
                       })}

@@ -36,7 +36,7 @@ function About({ aboutData }) {
             <p
               className={`text-transparent font-semibold sm:text-xl text-base tracking-wide ${Styles.gradientStyle}`}
             >
-              Currently looking for new opportunities!
+              Always looking for new opportunities!
             </p>
           </div>
           <Button

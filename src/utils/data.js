@@ -19,18 +19,6 @@ export const defaultData = {
   },
   skills: [
     {
-      skill: "HTML",
-      logo: "/html.png",
-      bg: "#FFF4F2",
-      percentage: 90,
-    },
-    {
-      skill: "CSS",
-      logo: "/css.png",
-      bg: "#DDE8EE",
-      percentage: 90,
-    },
-    {
       skill: "Bootstrap",
       logo: "/Bootstrap.png",
       bg: "#EFE8FA",
@@ -55,10 +43,22 @@ export const defaultData = {
       percentage: 60,
     },
     {
+      skill: "Chakra UI",
+      logo: "/chakra.png",
+      bg: "#ECFCFF",
+      percentage: 80,
+    },
+    {
       skill: "JavaScript",
       logo: "/javascript.png",
       bg: "#FDF7D1",
       percentage: 80,
+    },
+    {
+      skill: "TypeScript",
+      logo: "/typescript.png",
+      bg: "#ccf8ff",
+      percentage: 70,
     },
     {
       skill: "React JS",
@@ -71,6 +71,12 @@ export const defaultData = {
       logo: "/next.svg",
       bg: "#d4d4d4",
       percentage: 70,
+    },
+    {
+      skill: "Storybook JS",
+      logo: "/storybook.png",
+      bg: "#ffe3ea",
+      percentage: 40,
     },
     {
       skill: "React Native",
@@ -96,12 +102,12 @@ export const defaultData = {
       bg: "#ffe3ea",
       percentage: 70,
     },
-    // {
-    //   skill: "Framer",
-    //   logo: "/framer motion.svg",
-    //   bg: "#F3DDE4",
-    //   percentage: 60,
-    // },
+    {
+      skill: "Framer",
+      logo: "/framer motion.svg",
+      bg: "#F3DDE4",
+      percentage: 50,
+    },
     {
       skill: "Github",
       logo: "/github.png",
@@ -134,6 +140,20 @@ export const defaultData = {
   ],
   experience: [
     {
+      link: "https://www.karya.in/",
+      place: "Karya",
+      timeline: "July 2024 - Present",
+      name: "Software Engineer",
+      bulletPoints: [
+        "Integrated Strapi CMS into Karya's official website, and handled its maintenance, revamp, and updates.",
+        "Developed the End of The Year Report website, showcasing key organizational insights.",
+        "Building Platform V2, an AI-integrated task station, using Storybook, Chakra UI, TypeScript, React, and Redux.",
+        "Integrated an AI powered interactive canvas with React Flow in the Karya Platform, streamlining the task creation process for non-techies.",
+        "Collaborating with the Operations team to implement new features and resolve bugs in the existing product."
+      ],
+    },
+    {
+      link: "https://freeflow.zone/",
       place: "Freeflow Ventures",
       timeline: "March 2023 - February 2024",
       name: "Frontend Developer and Designer Intern",
@@ -145,6 +165,7 @@ export const defaultData = {
       ],
     },
     {
+      link: "#",
       place: "OkayG Softwares LLP",
       timeline: "May 2022 - August 2022",
       name: "Frontend Developer Intern",
@@ -154,6 +175,7 @@ export const defaultData = {
       ],
     },
     {
+      link: "#",
       place: "Doorstep Delhi",
       timeline: "May 2021 - August 2021",
       name: "Technical Writing Intern",
