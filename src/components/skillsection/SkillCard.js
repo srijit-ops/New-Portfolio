@@ -30,8 +30,23 @@ function SkillCard({ skill, percentage, logo, bg }) {
   const { theme } = useTheme();
   const [hovered, setHovered] = useState(false);
   return (
-    <div className={`w-full block`}>
-      <GradientSVG
+    <div className={`w-full flex flex-col justify-start items-center h-full`}>
+      <div
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
+        className={`sm:w-20 sm:h-20 w-16 h-16 rounded-[50%] p-4  cursor-pointer hover:scale-105 shadow-md hover:shadow-lg overflow-y-hidden flex items-center justify-center`}
+        style={{ backgroundColor: bg }}
+      >
+        <div className={`${Styles.img_container} w-full`}>
+          <Image
+            src={logo}
+            alt={skill}
+            layout="fill"
+            className={`${Styles.img}`}
+          />
+        </div>
+      </div>
+      {/* <GradientSVG
         gradientId={gradientId}
         gradientTransform={gradientTransform}
         color1={"#00ccff"}
@@ -71,7 +86,7 @@ function SkillCard({ skill, percentage, logo, bg }) {
             </div>
           </CircularProgressbarWithChildren>
         )}
-      </ProgressProvider>
+      </ProgressProvider> */}
       <p className="text-gray-700 text-sm sm:text-base dark:text-white overflow-y-hidden text-center font-semibold tracking-wide mt-4">
         {skill}
       </p>

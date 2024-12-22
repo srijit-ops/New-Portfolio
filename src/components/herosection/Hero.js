@@ -50,9 +50,9 @@ function Hero({ heroData, socials }) {
           })}
         </div>
       </div>
-      <div className="xl:w-5/12 lg:w-4/5 w-4/5 relative flex justify-center items-center cursor-pointer">
+      <div className="xl:w-5/12 lg:w-4/5 w-4/5 relative flex justify-center items-center">
         <div
-          className={`${Styles.box} relative 2xl:w-[540px]  2xl:h-[540px] xl:w-[430px] xl:h-[430px] lg:w-[500px] lg:h-[500px] w-[230px] h-[230px]  rounded-[50%] overflow-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}
+          className={`${Styles.box} relative 2xl:w-[540px]  2xl:h-[540px] xl:w-[430px] xl:h-[430px] lg:w-[500px] lg:h-[500px] sm:w-[330px] sm:h-[330px] w-[230px] h-[230px]  rounded-[50%] overflow-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}
         >
           <div
             className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}
@@ -66,7 +66,7 @@ function Hero({ heroData, socials }) {
                 className={`absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s] ${Styles.img}`}
               />
             </div>
-            <div
+            {/* <div
               className={`${Styles.quote} relative flex overflow-y-hidden mx-8`}
             >
               <div className="absolute xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-white top-[0] left-[0] overflow-y-hidden">
@@ -77,7 +77,7 @@ function Hero({ heroData, socials }) {
                   {heroData.quote} &#x1F60E;
                 </h4>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

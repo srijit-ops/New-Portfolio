@@ -25,7 +25,7 @@ function TestimonialCard({ name, img, quote, position }) {
           <div
             className={`${Styles.base} sm:basis-[calc(100%_-_80px)]  text-sm sm:text-base leading-[1.62rem] bg-white dark:bg-[#363636] pl-20 pr-[1.9rem] py-10 rounded-[0_0.75rem_0.75rem_0]`}
           >
-            <blockquote className="dark:text-gray-300 text-left" cite="">
+            <blockquote className="dark:text-gray-300 text-left max-h-36 overflow-auto" cite="">
               {quote}
             </blockquote>
             <div className="mt-[1.8rem] pt-3 border-t-2 border-t-[#777777] border-dotted bg-transparent text-left">

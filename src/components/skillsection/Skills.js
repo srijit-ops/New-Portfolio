@@ -9,12 +9,12 @@ function Skills({ skillData }) {
         name={"My Skills."}
         subtitle={"After all, it's just googling though."}
       />
-      <div className="flex justify-between items-center flex-wrap flex-row mt-14">
+      <div className="flex justify-between items-stretch flex-wrap flex-row mt-14">
         {skillData.map((item, index) => {
           return (
             <div
               key={index}
-              className="xl:w-[9%]  md:w-[15%] sm:w-[35%] w-[35%] sm:mx-6 mx-4 mb-9 flex justify-center items-center"
+              className="xl:w-[9%]  md:w-[15%] sm:w-[35%] w-[35%] sm:mx-4 mx-2 mb-9 flex justify-center items-center self-stretch"
             >
               <SkillCard
                 skill={item.skill}

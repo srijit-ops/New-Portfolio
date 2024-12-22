@@ -79,7 +79,7 @@ export const defaultData = {
       percentage: 40,
     },
     {
-      skill: "React Native",
+      skill: "React Native (Expo)",
       logo: "/react.png",
       bg: "#ECFCFF",
       percentage: 60,

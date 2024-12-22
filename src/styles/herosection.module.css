@@ -22,14 +22,14 @@
     animation: morph 8s ease-in-out infinite;
     aspect-ratio: 1/1;
   }
-  .box::before{
+  /* .box::before{
     background: linear-gradient(315deg, #00ccff, #d400d4); 
     @apply animate-[animate_4s_linear_infinite];
   }
 
   .box:hover .content img {
     @apply opacity-0;
-  }
+  } */
 
   @keyframes noise-anim {
     0% {
